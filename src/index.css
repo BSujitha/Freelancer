@@ -10,7 +10,7 @@ body {
   font-family: 'Plus Jakarta Sans', sans-serif;
   background: #ffffff;
   color: #111;
-  padding-top: 100px; /* for fixed header */
+  padding-top: 100px; 
 }
 
 section {
@@ -20,4 +20,8 @@ section {
 h1, h2, h3 {
   font-family: 'Space Grotesk', sans-serif;
   letter-spacing: -0.5px;
+}
+html,body{
+  overflow-x:hidden;
+  width:100%;
 }

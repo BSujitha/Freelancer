@@ -20,10 +20,10 @@
 
 /* CONTAINER */
 .container {
-  width: 92%;
-  max-width: 1300px;
-  margin: auto;
-  padding: 18px 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 
   display: flex;
   align-items: center;
@@ -109,4 +109,61 @@
 .btn-login:hover {
   background: #0a14cf;
   color: white;
+}
+/* HAMBURGER */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #111;
+  transition: 0.3s ease;
+}
+
+/* Animation */
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .nav {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background: #ffffff;
+    flex-direction: column;
+    width: 220px;
+    padding: 20px;
+    gap: 20px;
+    box-shadow: -5px 5px 20px rgba(0,0,0,0.1);
+    transform: translateX(100%);
+    transition: 0.3s ease;
+  }
+
+  .nav.active {
+    transform: translateX(0);
+  }
+
+  .btn-login {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
 }

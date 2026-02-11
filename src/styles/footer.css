@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 .footer {
-  background: #000000;   /* Changed to black */
-  color: #e5e7eb;        /* Light white text */
+  background: #000000;   
+  color: #e5e7eb;        
   padding: 80px 8% 40px 8%;
   font-family: 'Poppins', sans-serif;
 }
@@ -23,7 +23,7 @@
   font-weight: 700;
   margin-bottom: 20px;
 
-  /* WorkMania gradient NOT changed */
+
   background: linear-gradient(90deg, #0a14cf, #090979, #00ff44);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -33,7 +33,7 @@
   font-size: 14px;
   line-height: 1.7;
   margin-bottom: 10px;
-  color: #d1d5db;   /* Light white */
+  color: #d1d5db;   
 }
 
 /* SECTION HEADINGS */
@@ -42,7 +42,7 @@
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 20px;
-  color: #ffffff;   /* White */
+  color: #ffffff;  
 }
 
 /* LINKS */
@@ -59,7 +59,7 @@
 
 .footer a {
   text-decoration: none;
-  color: #e5e7eb;   /* Light white */
+  color: #e5e7eb;   
   font-size: 14px;
   transition: 0.3s ease;
 }
@@ -77,4 +77,30 @@
   text-align: center;
   font-size: 13px;
   color: #cbd5e1;   
+}
+@media (max-width: 768px) {
+
+  .footer-container {
+    grid-template-columns: 1fr;   /* Make single column */
+    gap: 40px;
+    text-align: left;
+  }
+
+  .footer {
+    padding: 60px 20px 30px 20px;
+  }
+
+  .footer-brand h2 {
+    font-size: 22px;
+  }
+
+  .footer-links h3,
+  .footer-policies h3 {
+    font-size: 15px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+    padding-top: 15px;
+  }
 }
