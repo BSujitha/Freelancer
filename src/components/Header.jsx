@@ -9,13 +9,13 @@ export default function Header() {
     e.preventDefault();
 
     if (location.pathname !== '/') {
-      // If not on home page, go there first
+      
       navigate('/', { replace: false });
-      // Wait a bit for the page to render
+      
       setTimeout(() => {
         const element = document.querySelector(sectionId);
         if (element) {
-          const headerOffset = 120; // adjust if header is fixed
+          const headerOffset = 120; 
           const elementPosition = element.getBoundingClientRect().top;
           const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
@@ -24,9 +24,9 @@ export default function Header() {
             behavior: 'smooth'
           });
         }
-      }, 100); // 100ms delay for DOM
+      }, 100); 
     } else {
-      // Already on home, just scroll
+     
       const element = document.querySelector(sectionId);
       if (element) {
         const headerOffset = 120;

@@ -38,15 +38,7 @@ export default function Footer() {
             <li>
               <Link to="/hire">Hire Freelancers</Link>
             </li>
-            <li>
-              <Link to="/dashboard">Dashboard</Link>
-            </li>
-            <li>
-              <Link to="/pricing">Pricing</Link>
-            </li>
-            <li>
-              <Link to="/mobile">Mobile App</Link>
-            </li>
+            
           </ul>
         </div>
 

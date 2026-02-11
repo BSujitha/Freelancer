@@ -1,15 +1,10 @@
 import React from "react";
 import "../styles/hero.css";
-import heroVideo from "../assets/hero-video.mp4"; // Make sure the file exists in assets
+import heroVideo from "../assets/hero-video.mp4"; 
 
 export default function Hero() {
   return (
-    <section className="hero">
-      {/* Video Background */}
-      <video className="hero-video" autoPlay loop muted>
-        <source src={heroVideo} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+    <section id="hero" className="hero">
 
       {/* Overlay Content */}
       <div className="hero-overlay">

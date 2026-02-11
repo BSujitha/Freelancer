@@ -1,44 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 100px; 
-}
-
-
-:root {
-  /* Glassmorphism Colors */
-  --glass-bg: rgba(255, 255, 255, 0.1);
-  --glass-bg-dark: rgba(255, 255, 255, 0.05);
-  --glass-border: rgba(255, 255, 255, 0.2);
-  --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  
-  /* Neon Gradients */
-  --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-  --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-  
-  /* Dark Theme */
-  --bg-primary: #0c0c1a;
-  --bg-secondary: #1a1a2e;
-  --text-primary: #ffffff;
-  --text-secondary: #b8b8d1;
-  
-  /* Neumorphism */
-  --neumo-shadow-1: 8px 8px 16px rgba(0,0,0,0.3), -8px -8px 16px rgba(255,255,255,0.1);
-  --neumo-shadow-2: inset 2px 2px 4px rgba(0,0,0,0.2), inset -2px -2px 4px rgba(255,255,255,0.1);
-  
-  /* Spacing & Radius */
-  --radius-sm: 12px;
-  --radius-lg: 24px;
-  --radius-xl: 32px;
-  --spacing-xs: 8px;
-  --spacing-sm: 16px;
-  --spacing-md: 24px;
-  --spacing-lg: 32px;
-  --spacing-xl: 48px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap');
 
 * {
   margin: 0;
@@ -47,30 +7,17 @@ html {
 }
 
 body {
-  font-family: 'Inter', sans-serif;
-  background: var(--bg-primary);
-  color: var(--text-primary);
-  line-height: 1.6;
-  overflow-x: hidden;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background: #ffffff;
+  color: #111;
+  padding-top: 100px; /* for fixed header */
 }
 
 section {
-  position: relative; 
+  padding: 90px 8%;
 }
 
-
-button, .btn-primary, .cta-btn, .btn-hire {
-  font-family: inherit;
-  border: none;
-  cursor: pointer;
-}
-
-.hero, .services, .cta, .categories, .jobs {
-  padding-top: 120px !important;  
-}
-
-@media (max-width: 768px) {
-  .hero, .services, .cta, .categories, .jobs {
-    padding-top: 100px !important; 
-  }
+h1, h2, h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  letter-spacing: -0.5px;
 }

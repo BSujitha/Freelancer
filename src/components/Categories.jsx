@@ -29,7 +29,7 @@ const categories = [
 
 export default function Categories() {
   return (
-    <section className="categories">
+    <section id="categories" className="categories">
       <h2>Popular Categories</h2>
       <div className="categories-container">
         {categories.map((cat, index) => (

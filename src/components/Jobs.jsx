@@ -1,17 +1,16 @@
 import '../styles/jobs.css';
 
 const jobsData = [
-  { title: 'Frontend Web Developer', needed: 5, location: 'New York', applicants: 3 },
-  { title: 'Graphic Designer', needed: 3, location: 'Los Angeles', applicants: 2 },
-  { title: 'Mobile App Developer', needed: 4, location: 'San Francisco', applicants: 1 },
-  { title: 'Digital Marketer', needed: 2, location: 'Chicago', applicants: 0 },
-  { title: 'Backend Developer', needed: 3, location: 'Austin', applicants: 1 },
-  { title: 'UI/UX Designer', needed: 2, location: 'Seattle', applicants: 2 },
+  { title: 'Frontend Web Developer', needed: 5, location: 'Coimbatore', applicants: 3 },
+  { title: 'Graphic Designer', needed: 3, location: 'Chennai', applicants: 2 },
+  { title: 'Mobile App Developer', needed: 4, location: 'Selam', applicants: 1 },
+  { title: 'Backend Developer', needed: 3, location: 'Nammakal', applicants: 1 },
+  { title: 'UI/UX Designer', needed: 2, location: 'Madurai', applicants: 2 },
 ];
 
 export default function Jobs() {
   return (
-    <section className="jobs">
+    <section id="jobs" className="jobs">
       <h2>WorkMania Job Board</h2>
       <div className="jobs-container">
         {jobsData.map((job, index) => (
