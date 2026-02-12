@@ -34,3 +34,45 @@
 .category-card:hover {
   transform: translateY(-5px);
 }
+@media (max-width: 768px) {
+  .categories-container {
+    display: grid;
+    grid-template-columns: 1fr; /* single column */
+    gap: 25px;
+  }
+
+  /* Optional: reorder specific cards */
+  .categories-container .category-card:nth-child(1) { order: 1; }
+  .categories-container .category-card:nth-child(2) { order: 2; }
+  .categories-container .category-card:nth-child(3) { order: 3; }
+  .categories-container .category-card:nth-child(4) { order: 4; }
+  /* ...continue for all 12 cards */
+}
+@media (max-width: 768px) {
+
+  .jobs-container {
+    gap: 25px;
+  }
+
+  .job-card {
+    flex-direction: column; /* stack everything vertically */
+    align-items: flex-start;
+    padding-bottom: 20px;
+  }
+
+  .job-header {
+    margin-bottom: 10px;
+  }
+
+  .job-location,
+  .job-applicants {
+    width: 100%; /* full width */
+    margin-bottom: 8px;
+  }
+
+  .btn-hire {
+    width: 100%; /* button full width */
+    text-align: center;
+  }
+}
+

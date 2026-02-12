@@ -12,30 +12,28 @@
 
 /* TITLE */
 .hero-overlay h1 {
-  font-size: 52px;
+  font-size: 64px;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 20px;
 
+  /* Static Gradient */
   background: linear-gradient(
     90deg,
-    rgba(10, 20, 207, 1),
-    rgba(9, 9, 121, 1),
-    rgba(0, 255, 68, 1),
-    rgba(10, 20, 207, 1)
+    #0a14cf,
+    #090979,
+    #00ff44
   );
-
-  background-size: 300% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
-  animation: gradientLoop 5s linear infinite;
+  /* Remove animation */
 }
 
 
 /* SUBTEXT */
 .hero-overlay p {
-  font-size: 17px;
+  font-size: 20\px;
   color: #6b7280;
   margin-bottom: 35px;
   line-height: 1.6;
@@ -43,24 +41,21 @@
 
 /* BUTTON */
 .btn-primary {
-  padding: 14px 34px;
+  padding: 18px 42px;
   border-radius: 30px;
   border: none;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
   cursor: pointer;
   color: #ffffff;
 
+  /* Static Gradient background */
   background: linear-gradient(
     90deg,
-    rgba(10, 20, 207, 1),
-    rgba(9, 9, 121, 1),
-    rgba(0, 255, 68, 1),
-    rgba(10, 20, 207, 1)
+    #0a14cf,
+    #090979,
+    #00ff44
   );
-
-  background-size: 300% auto;
-  animation: gradientLoop 5s linear infinite;
 
   transition: 0.3s ease;
 }
@@ -75,5 +70,23 @@
   }
   100% {
     background-position: 300% center;
+  }
+}
+@media (max-width: 768px) {
+  .hero {
+    padding: 80px 6% 60px 6%; /* smaller top & bottom padding */
+  }
+
+  .hero-overlay h1 {
+    font-size: 40px; /* smaller heading */
+  }
+
+  .hero-overlay p {
+    font-size: 16px; /* smaller paragraph */
+  }
+
+  .btn-primary {
+    padding: 12px 28px; /* smaller button */
+    font-size: 16px;
   }
 }
