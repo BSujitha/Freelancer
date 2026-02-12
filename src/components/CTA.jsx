@@ -10,7 +10,7 @@ export default function CTA() {
           Post your project and hire skilled professionals near you. WorkMania
           makes hiring fast, secure, and easy.
         </p>
-        <button className="cta-btn">Post a Project Now</button> {/* Fixed className */}
+        <button className="cta-btn">Post a Project Now</button> 
       </div>
       <div className="cta-shapes">
         <span className="shape shape-1"></span>

@@ -95,21 +95,6 @@
   box-shadow: 0 6px 18px rgba(10, 20, 207, 0.3);
 }
 
-/* LOGIN BUTTON */
-.btn-login {
-  padding: 8px 18px;
-  border-radius: 25px;
-  border: 2px solid #0a14cf;
-  background: transparent;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-
-.btn-login:hover {
-  background: #0a14cf;
-  color: white;
-}
 /* HAMBURGER */
 .hamburger {
   display: none;
@@ -159,9 +144,7 @@
     transform: translateX(0);
   }
 
-  .btn-login {
-    display: none;
-  }
+  
 
   .hamburger {
     display: flex;

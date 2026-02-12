@@ -59,7 +59,6 @@ export default function Header() {
           </a>
         </nav>
 
-        <button className="btn-login">Login</button>
 
         {/* HAMBURGER */}
         <div
